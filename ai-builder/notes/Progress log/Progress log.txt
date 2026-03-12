@@ -1,0 +1,28 @@
+# Progress Log — AI Builder Journey
+
+## Current Status
+- Current phase: Phase 0 — Setup & Orientation
+- Current week: Week 0
+- Last session date: [date]
+- Next planned topic: Claude Code orientation
+- Biggest blocker: None yet
+
+## Completed
+(Update as you go)
+- [ ] Phase 0: Claude Code orientation
+- [ ] Phase 0: Safety setup
+- [ ] Phase 0: VS Code integration
+- [ ] Week 1: Python basics — variables, types, strings
+- [ ] Week 1: Python basics — lists, dictionaries
+- [ ] Week 1: Python basics — functions, loops
+- [ ] Week 1: Python basics — file I/O, JSON
+- [ ] Week 1: Project — Text File Analyzer
+...
+
+## Session Summaries
+### Session 1 — [date]
+- Topic: 
+- What I built/practiced:
+- Key takeaway:
+- Still confused about:
+- Next step:
