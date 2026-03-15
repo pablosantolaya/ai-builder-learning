@@ -1,0 +1,38 @@
+# Python Skills Tracker
+
+## Comfortable (can write from memory)
+- (none yet)
+
+## Familiar (can read and modify, need reference for writing)
+- (none yet)
+
+## Introduced (have seen it, need full guidance)
+- (none yet)
+
+## Not Yet Covered
+- Variables and data types
+- Strings and string methods
+- Lists and list methods
+- Dictionaries
+- Tuples and sets
+- Conditional statements (if/elif/else)
+- For loops
+- While loops
+- List comprehensions
+- Functions (defining, parameters, return values)
+- Default arguments and keyword arguments
+- Reading files
+- Writing files
+- JSON reading and writing
+- CSV reading and writing
+- Error handling (try/except)
+- Importing modules
+- Installing packages (pip)
+- Environment variables
+- Classes and objects (basic)
+- HTTP requests
+- API calls
+- Working with dates/times
+- String formatting (f-strings)
+- Regular expressions (basic)
+- Command line arguments

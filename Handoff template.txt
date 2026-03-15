@@ -1,0 +1,8 @@
+SESSION HANDOFF — [date]
+Last session: [what we covered]
+Current position in roadmap: [phase/week]
+What I built: [files/scripts]
+What I'm stuck on: [if anything]
+Python skills current level: [list recent additions]
+Next planned topic: [from roadmap]
+Goal for this session: [what I want to accomplish]
