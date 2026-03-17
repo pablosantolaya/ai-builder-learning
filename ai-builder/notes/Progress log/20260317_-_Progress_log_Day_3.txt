@@ -1,0 +1,72 @@
+# Progress Log — AI Builder Journey
+
+## Current Status
+- Current phase: Phase 1 — Python Foundations + First Tools
+- Current week: Week 2
+- Last session date: March 17, 2026
+- Next planned topic: Phase 1, Week 2, Day 1 — Error handling (try/except), imports, pip (Exercises 16-19)
+- Biggest blocker: None
+
+## Completed
+(Update as you go)
+- [x] Phase 0: Claude Code orientation
+	- [x] Phase 0: Environment setup (VS Code, Python extension, Git, GitHub CLI)
+	- [x] Phase 0: Claude Code installed and first session completed
+	- [x] Phase 0: VS Code integration (can see Claude Code files in explorer)
+- [x] Phase 0: Safety setup (settings.json + CLAUDE.md)
+- [x] Phase 0: Git foundations (branching, pushing to GitHub)
+- [x] Week 1: Python basics — variables, types, strings
+- [x] Week 1: Python basics — lists, dictionaries
+- [x] Week 1: Python basics — functions, loops
+- [x] Week 1: Python basics — file I/O, JSON
+- [x] Week 1: Project — Text File Analyzer
+- [ ] Week 2: Error handling (try/except)
+- [ ] Week 2: APIs and HTTP requests
+- [ ] Week 2: Calling Claude's API
+- [ ] Week 2: Project — Document Summarizer
+...
+
+## Session Summaries
+### Session 1 — March 11, 2026
+- Topic: Phase 0 Day 1 - Environment setup
+- What I built/practiced: Installed Python extension, initialized Git repo, installed and authenticated GitHub CLI
+- Key takeaway: Git = save points, GitHub CLI connects terminal to GitHub account
+- Still confused about: Nothing major
+- Next step: Phase 0 Day 2 - Claude Code orientation
+
+### Session 2 — March 12, 2026
+- Topic: Phase 0 Day 2 - Claude Code orientation
+- What I built/practiced: Installed Node.js and Claude Code. Created hello_ai.py (greeting + date + semester countdown with if/else logic). Learned to read Claude Code's proposed changes before approving. Made second Git commit.
+- Key takeaway: The core workflow is Claude Code creates/modifies files → I read and approve → VS Code shows the files → Git saves the progress. Always launch Claude Code from the project folder.
+- Still confused about: Nothing major — saw some Python concepts (datetime, if/else, f-strings) in action but haven't formally learned them yet
+- Next step: Phase 0 Day 3 — Git foundations (branching, pushing to GitHub) + Claude Code safety setup (settings.json, CLAUDE.md)
+
+### Session 3 — March 15, 2026
+- Topic: Phase 0 Day 3 - Git branching, pushing to GitHub, Claude Code safety setup
+- What I built/practiced: Created GitHub repo (ai-builder-learning) using gh repo create. Practiced full branch workflow (create → commit → switch → merge → delete → push). Created settings.json (global Claude Code permissions with allow/deny lists). Created CLAUDE.md (project-level behavior rules).
+- Key takeaway: Branches let you experiment without risking working code. settings.json controls what Claude Code CAN do (mechanical permissions), CLAUDE.md controls HOW it behaves (project context and rules). $HOME is a PowerShell shortcut to your user folder.
+- Still confused about: Nothing major
+- Next step: Phase 1, Week 1, Day 1 — Python fundamentals (variables, types, strings, f-strings, Exercises 1-4)
+
+### Session 4 — March 17, 2026
+- Topic: Phase 1, Week 1, Day 1 — Python fundamentals (variables, types, strings, f-strings, lists, dictionaries)
+- What I built/practiced: Completed Exercises 1-8 in two files (day1_strings.py, day1_lists_dicts.py). Also completed bonus exercise (day1_bonus.py) using nested dictionaries with filtering logic. Learned to run Python files from VS Code terminal, debug errors (NameError from interactive shell, TypeError from string/int mismatch), and commit from correct directory.
+- Key takeaway: Lists = ordered collections accessed by position; dictionaries = labeled collections accessed by key. APIs return data as dictionaries, and lists of dictionaries are the most common real-world data pattern. Always check what folder you're in before running git commands.
+- Still confused about: Nothing major
+- Next step: Phase 1, Week 1, Day 2 — Functions, loops, conditionals (Exercises 9-12)
+
+### Session 5 — March 17, 2026
+- Topic: Phase 1, Week 1, Day 2 — Functions, loops, conditionals (Exercises 9-12)
+- What I built/practiced: Completed Exercises 9-12 in day2_functions.py. Covered function definitions with def/return, default and keyword arguments, returning dictionaries from functions, building frequency dictionaries with loops, and filtering lists of dictionaries. Reorganized exercises/ into weekly subfolders. Disabled GitHub Copilot for exercises. Completed bonus exercise (word_frequency function).
+- Key takeaway: Functions should return values, not print them — returned values can be stored, passed to other functions, or sent to APIs. Never name variables after built-ins (sum, min, max). Variables inside functions don't exist outside them (scope). Looping through a list of dictionaries and filtering by a field is the most common pattern for processing API responses.
+- Errors debugged: UnboundLocalError from shadowing sum(), NameError from using function-scoped variable outside function, AttributeError from calling .items() on a list instead of a dictionary.
+- Still confused about: Nothing major
+- Next step: Phase 1, Week 1, Day 3 — File I/O and JSON (Exercises 13-15), then start Text File Analyzer project
+
+### Session 6 — March 17, 2026
+- Topic: Phase 1, Week 1, Day 3 — File I/O and JSON (Exercises 13-15) + Text File Analyzer project
+- What I built/practiced: Completed Exercises 13-15 in day3_files.py. Learned file reading/writing with open() and with statements, JSON dump/load, enumerate() for indexed loops. Built first full project: Text File Analyzer that reads any text file, computes 7 metrics (line count, word count, character count, sentence count, average word length, top 5 words, reading time estimate), and saves results as formatted JSON. Organized output files into output/ subfolders. Created Python cheat sheet (Days 1-3).
+- Key takeaway: Functions should return values and let the caller decide what to do with them (print, save, pass along). File paths are relative to where you run the script, not where the script lives. .count() counts substring occurrences. sorted() with key and reverse gives ranked results from dictionaries.
+- Errors debugged: FileNotFoundError from wrong relative paths, folder name typo (text_analyer vs text_analyzer), looping over characters vs words (for word in line vs for word in words), average word length including spaces.
+- Still confused about: Nothing major
+- Next step: Phase 1, Week 2, Day 1 — Error handling (try/except), imports, pip (Exercises 16-19)
