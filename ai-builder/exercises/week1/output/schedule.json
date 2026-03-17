@@ -1,0 +1,36 @@
+{
+    "Monday": [
+        "Finance lecture",
+        "Gym",
+        "Study group"
+    ],
+    "Tuesday": [
+        "AI lab session",
+        "Office hours",
+        "Reading"
+    ],
+    "Wednesday": [
+        "Strategy seminar",
+        "Team project meeting",
+        "Gym"
+    ],
+    "Thursday": [
+        "Entrepreneurship workshop",
+        "Library research",
+        "Networking event"
+    ],
+    "Friday": [
+        "Case study prep",
+        "Guest speaker lunch",
+        "Free afternoon"
+    ],
+    "Saturday": [
+        "AI Builder session",
+        "Errands"
+    ],
+    "Sunday": [
+        "Rest",
+        "Week planning",
+        "Light reading"
+    ]
+}
