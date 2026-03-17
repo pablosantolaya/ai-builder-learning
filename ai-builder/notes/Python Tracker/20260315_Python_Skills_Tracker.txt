@@ -1,0 +1,37 @@
+# Python Skills Tracker
+
+## Comfortable (can write from memory)
+- (none yet)
+
+## Familiar (can read and modify, need reference for writing)
+- (none yet)
+
+## Introduced (have seen it, need full guidance)
+- Variables and data types (seen in hello_ai.py)
+- Conditional statements — if/elif/else (seen in hello_ai.py)
+- Importing modules (seen: datetime)
+- Working with dates/times (seen: date.today(), date subtraction)
+- String formatting — f-strings (seen in hello_ai.py)
+
+## Not Yet Covered
+- Strings and string methods
+- Lists and list methods
+- Dictionaries
+- Tuples and sets
+- For loops
+- While loops
+- List comprehensions
+- Functions (defining, parameters, return values)
+- Default arguments and keyword arguments
+- Reading files
+- Writing files
+- JSON reading and writing
+- CSV reading and writing
+- Error handling (try/except)
+- Installing packages (pip)
+- Environment variables
+- Classes and objects (basic)
+- HTTP requests
+- API calls
+- Regular expressions (basic)
+- Command line arguments

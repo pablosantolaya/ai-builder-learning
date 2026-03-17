@@ -1,0 +1,45 @@
+# Progress Log — AI Builder Journey
+
+## Current Status
+- Current phase: Phase 0 — Complete
+- Current week: Week 0
+- Last session date: March 15, 2026
+- Next planned topic: Phase 1, Week 1, Day 1 — Python fundamentals (variables, types, strings, f-strings)
+- Biggest blocker: None
+
+## Completed
+(Update as you go)
+- [x] Phase 0: Claude Code orientation
+	- [x] Phase 0: Environment setup (VS Code, Python extension, Git, GitHub CLI)
+	- [x] Phase 0: Claude Code installed and first session completed
+	- [x] Phase 0: VS Code integration (can see Claude Code files in explorer)
+- [x] Phase 0: Safety setup (settings.json + CLAUDE.md)
+- [x] Phase 0: Git foundations (branching, pushing to GitHub)
+- [ ] Week 1: Python basics — variables, types, strings
+- [ ] Week 1: Python basics — lists, dictionaries
+- [ ] Week 1: Python basics — functions, loops
+- [ ] Week 1: Python basics — file I/O, JSON
+- [ ] Week 1: Project — Text File Analyzer
+...
+
+## Session Summaries
+### Session 1 — March 11, 2026
+- Topic: Phase 0 Day 1 - Environment setup
+- What I built/practiced: Installed Python extension, initialized Git repo, installed and authenticated GitHub CLI
+- Key takeaway: Git = save points, GitHub CLI connects terminal to GitHub account
+- Still confused about: Nothing major
+- Next step: Phase 0 Day 2 - Claude Code orientation
+
+### Session 2 — March 12, 2026
+- Topic: Phase 0 Day 2 - Claude Code orientation
+- What I built/practiced: Installed Node.js and Claude Code. Created hello_ai.py (greeting + date + semester countdown with if/else logic). Learned to read Claude Code's proposed changes before approving. Made second Git commit.
+- Key takeaway: The core workflow is Claude Code creates/modifies files → I read and approve → VS Code shows the files → Git saves the progress. Always launch Claude Code from the project folder.
+- Still confused about: Nothing major — saw some Python concepts (datetime, if/else, f-strings) in action but haven't formally learned them yet
+- Next step: Phase 0 Day 3 — Git foundations (branching, pushing to GitHub) + Claude Code safety setup (settings.json, CLAUDE.md)
+
+### Session 3 — March 15, 2026
+- Topic: Phase 0 Day 3 - Git branching, pushing to GitHub, Claude Code safety setup
+- What I built/practiced: Created GitHub repo (ai-builder-learning) using gh repo create. Practiced full branch workflow (create → commit → switch → merge → delete → push). Created settings.json (global Claude Code permissions with allow/deny lists). Created CLAUDE.md (project-level behavior rules).
+- Key takeaway: Branches let you experiment without risking working code. settings.json controls what Claude Code CAN do (mechanical permissions), CLAUDE.md controls HOW it behaves (project context and rules). $HOME is a PowerShell shortcut to your user folder.
+- Still confused about: Nothing major
+- Next step: Phase 1, Week 1, Day 1 — Python fundamentals (variables, types, strings, f-strings, Exercises 1-4)

@@ -1,0 +1,36 @@
+# Python Skills Tracker
+
+## Comfortable (can write from memory)
+- (none yet)
+
+## Familiar (can read and modify, need reference for writing)
+- Variables and data types (Exercises 1-2: created variables, type conversion with int/str)
+- String formatting — f-strings (Exercises 1-4: used in all print statements, embedded expressions)
+- Strings and string methods (Exercises 3-4: .split(), .upper(), len(), slicing, indexing, [::-1])
+- Lists and list methods (Exercises 5, 7: indexing, .append(), .remove(), slicing, iteration)
+- Dictionaries (Exercises 6, 8, bonus: key access, .get(), .values(), .keys(), .items(), nested dicts)
+
+## Introduced (have seen it, need full guidance)
+- Conditional statements — if/elif/else (used in Exercise 7 and bonus for filtering)
+- For loops (used in Exercises 7-8 and bonus to iterate over lists and dicts)
+- Importing modules (seen: datetime in hello_ai.py)
+- Working with dates/times (seen: date.today(), date subtraction in hello_ai.py)
+
+## Not Yet Covered
+- Tuples and sets
+- While loops
+- List comprehensions
+- Functions (defining, parameters, return values)
+- Default arguments and keyword arguments
+- Reading files
+- Writing files
+- JSON reading and writing
+- CSV reading and writing
+- Error handling (try/except)
+- Installing packages (pip)
+- Environment variables
+- Classes and objects (basic)
+- HTTP requests
+- API calls
+- Regular expressions (basic)
+- Command line arguments
