@@ -1,0 +1,6 @@
+{
+    "summary": "Renewable energy has transformed from a niche alternative to the dominant force in global energy markets, with solar and wind now comprising the majority of new electricity capacity additions worldwide due to dramatic cost reductions and improved technology. Government policies, including the EU's net-zero commitment and major investments by China and the US, have accelerated this transition while creating millions of jobs and new economic opportunities. Despite remaining challenges with grid infrastructure, permitting processes, and supply chain constraints, the International Energy Agency projects renewables will generate over half of global electricity by 2030, making the transition economically irreversible.",
+    "model": "claude-sonnet-4-20250514",
+    "input_tokens": 470,
+    "output_tokens": 125
+}

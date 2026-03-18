@@ -12,7 +12,7 @@ def ask_claude(question, system_prompt=None):
     # Step 2: Check that we have a key before proceeding
     if not api_key:
         print("Error: ANTHROPIC_API_KEY not found in .env file")
-        print("Add it like: ANTHORPIC_API_KEY=sk-ant-your-key-here")
+        print("Add it like: ANTHROPIC_API_KEY=sk-ant-your-key-here")
         return None
     else:
         # Step 3: Create the client
