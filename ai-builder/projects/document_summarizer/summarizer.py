@@ -66,9 +66,9 @@ def get_summary_style():
 
     # Each key is what the user types; each value is the instruction for Claude
     styles = {
-        "1": "Summarize in 2-3 sentences. Be concise.",
-        "2": "Write a thorough summary with key points as bullet points.",
-        "3": "Summarize using simple words a 10-year-old could understand.",
+        "1": {"name": "Brief", "prompt": "Summarize in 2-3 sentences. Be concise."},
+        "2": {"name": "Detailed", "prompt": "Write a thorough summary with key points as bullet points."},
+        "3": {"name": "Simple", "prompt": "Summarize using simple words a 10-year-old could understand."},
     }
 
     # Print the menu for the user
@@ -84,7 +84,7 @@ def get_summary_style():
     # Option 4: let the user write their own system prompt
     if choice == "4":
         custom_prompt = input("Enter your custom instruction for Claude: ").strip()
-        return custom_prompt
+        return {"name": "custom", "prompt": custom_prompt}
 
     # Look up the choice in the dictionary
     elif choice in styles:
@@ -223,12 +223,13 @@ def main():
     print(f"File loaded. ({len(content)} characters)")
 
     # Step 3: Ask the user how they want it summarized
-    system_prompt = get_summary_style()
-
+    system_prompt_dic = get_summary_style()
+    system_prompt = system_prompt_dic["prompt"]
     # Step 4: Send to Claude — stop if the API call failed
     results = summarize_text(content, system_prompt)
     if results is None:
         return
+    results["style"] = system_prompt_dic["name"]
 
     # Step 5: Print the summary to the screen
     print("\n--- Summary ---")

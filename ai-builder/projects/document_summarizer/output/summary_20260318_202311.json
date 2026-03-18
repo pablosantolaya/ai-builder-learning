@@ -1,0 +1,7 @@
+{
+    "summary": "**The Rise of Clean Energy**\n\nIn the last 10 years, clean energy like solar panels and wind turbines has become really popular around the world. These green energy sources are now being built more than dirty energy sources like coal plants.\n\n**Why This Happened:**\n- Solar panels got much cheaper - about 90% less expensive since 2010\n- Wind turbines got better at catching wind with bigger blades and taller towers\n- Batteries got cheaper too, so we can store energy when the sun isn't shining or wind isn't blowing\n\n**Governments Helped:**\n- Europe promised to stop polluting by 2050\n- China started making lots of solar panels\n- America gave money to help people buy clean energy\n\n**Good Things:**\n- Millions of new jobs were created\n- Farmers can make money by letting companies put wind turbines on their land\n- Even oil companies are starting to use clean energy\n\n**Problems Still to Solve:**\n- Our electricity systems weren't built for solar and wind power\n- It takes too long to get permission to build new clean energy\n- We need special materials for batteries that are hard to find\n- Poor countries need help paying for clean energy\n\n**What's Next:**\nExperts think that by 2030, more than half of the world's electricity will come from clean energy sources. The change is happening so fast that most people agree there's no going back to the old, dirty ways of making electricity.",
+    "model": "claude-sonnet-4-20250514",
+    "input_tokens": 471,
+    "output_tokens": 317,
+    "style": "Simple"
+}
