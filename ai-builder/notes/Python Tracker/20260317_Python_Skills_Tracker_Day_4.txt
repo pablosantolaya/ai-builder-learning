@@ -1,0 +1,43 @@
+# Python Skills Tracker
+
+## Comfortable (can write from memory)
+- (none yet)
+
+## Familiar (can read and modify, need reference for writing)
+- Variables and data types (Exercises 1-2: created variables, type conversion with int/str)
+- String formatting — f-strings (Exercises 1-4, 9-19, analyzer: used in all print statements, embedded expressions, mixing quote types)
+- Strings and string methods (Exercises 3-4, analyzer: .split(), .upper(), .strip(), .count(), len(), slicing, indexing, [::-1])
+- Lists and list methods (Exercises 5, 7, 12, analyzer: indexing, .append(), .remove(), slicing [:5], iteration, building lists in loops)
+- Dictionaries (Exercises 6, 8, 10-11, 14-15, analyzer: key access, .get(), .values(), .keys(), .items(), nested dicts, building dicts in loops, dicts as return values)
+- Functions — defining, parameters, return values (Exercises 9-12, 15-17, analyzer: def, return, calling functions, storing return values, functions that return dicts, returning from multiple code paths)
+- Default arguments and keyword arguments (Exercise 9: greeting="Hello", calling with keyword argument)
+- Conditional statements — if/elif/else (Exercises 7, 11-12, analyzer: filtering with conditions, combining with loops)
+- For loops (Exercises 7-8, 11-15, analyzer: iterating over lists, strings, lines, words, and lists of dicts)
+- File I/O — reading and writing text files (Exercises 13, 15, analyzer: open() with "w"/"r"/"a" modes, with statement, .read(), .readlines(), .write(), .strip())
+- JSON — saving and loading data (Exercise 14, 17, analyzer: import json, json.dump() with indent, json.load(), json.JSONDecodeError)
+- enumerate() — index + value in loops (Exercise 13: for i, line in enumerate(lines))
+- Error handling — try/except (Exercises 16-17: catching ValueError, ZeroDivisionError, FileNotFoundError, json.JSONDecodeError, using else for success path, returning from except blocks)
+- Importing modules (Exercises 16-19: import json, from dotenv import load_dotenv, import os, import requests — standard library vs third-party)
+- Installing packages with pip (Exercise 18: pip install requests, pip install python-dotenv)
+- Environment variables (Exercise 19: .env files, load_dotenv(), os.getenv(), .gitignore protection)
+- input() for user input (Exercise 16: input() returns strings, convert with float()/int())
+
+## Introduced (have seen it, need full guidance)
+- Working with dates/times (seen: date.today(), date subtraction in hello_ai.py)
+- Variable scope (encountered: NameError when using function variable outside function)
+- Built-in function shadowing (encountered: naming a variable "sum" breaks the sum() function)
+- sorted() with key parameter (analyzer: sorted(dict, key=dict.get, reverse=True) for ranking)
+- .count() for substring counting (analyzer: line.count(".") to count sentence endings)
+- sum() with generator expression (analyzer: sum(len(word) for word in words) for total character count)
+- File path management (analyzer, exercises: relative paths, storing paths in variables, path relative to terminal location)
+
+## Not Yet Covered
+- Tuples and sets
+- While loops
+- List comprehensions
+- CSV reading and writing
+- Classes and objects (basic)
+- HTTP requests
+- API calls
+- Regular expressions (basic)
+- Command line arguments
