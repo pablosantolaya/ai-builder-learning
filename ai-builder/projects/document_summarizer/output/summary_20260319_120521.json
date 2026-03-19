@@ -1,0 +1,7 @@
+{
+    "summary": "Renewable energy has transformed from a niche alternative to the dominant force in global energy markets over the past decade, with solar and wind power now accounting for the majority of new electricity capacity additions worldwide. This shift has been driven by dramatic cost reductions (solar panels down 90% since 2010), improved technology, supportive government policies, and the creation of millions of new jobs. Despite remaining challenges like grid infrastructure and supply chain constraints, the International Energy Agency projects renewables will generate over half of global electricity by 2030, making the transition economically driven and irreversible.",
+    "model": "claude-sonnet-4-20250514",
+    "input_tokens": 470,
+    "output_tokens": 123,
+    "style": "Brief"
+}

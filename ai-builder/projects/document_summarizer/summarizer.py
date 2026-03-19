@@ -173,12 +173,9 @@ def summarize_text(content, system_prompt):
 #   a file. indent=4 adds spacing so the file is human-readable.
 # ==============================================================
 
-def save_results(results, output_dir):
+def save_results(results, output_dir, timestamp):
     """Saves the results dictionary as a JSON file with a timestamp in the name.
     Returns the path of the saved file."""
-
-    # Build a timestamp string like "20260318_143022"
-    timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
 
     # Combine the output folder path and the filename into one full path
     filename = f"summary_{timestamp}.json"
@@ -190,6 +187,29 @@ def save_results(results, output_dir):
 
     print(f"Results saved to: {filepath}")
     return filepath
+
+
+
+# ==============================================================
+# Bonus exercise: Create function for saving text summary in
+#  .txt file
+# ==============================================================
+
+def save_text_summary(results,output_dir,timestamp):
+    """Saves the results dictionary as a .txt file with a timestamp in the name.
+    Returns the path of the saved file."""
+
+    filename = f"summary_{timestamp}.txt"
+    filepath = os.path.join(output_dir, filename)
+
+    with open(filepath,"w") as f:
+        f.write(f"Style: {results['style']}\n\n")
+        f.write(f"Tokens — input: {results['input_tokens']}, output: {results['output_tokens']}\n\n")
+        f.write(f"{results['summary']}\n")
+
+    print(f"Summary content saved to: {filepath}")
+    return filepath
+
 
 
 # ==============================================================
@@ -238,9 +258,12 @@ def main():
     # Step 6: Print token usage
     print(f"\nTokens used — input: {results['input_tokens']}, output: {results['output_tokens']}")
 
-    # Step 7: Save results to the output/ folder
-    save_results(results, "projects/document_summarizer/output")
+    # Step 7: Build a timestamp string like "20260318_143022"
+    timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
 
+    # Step 8: Save results to the output/ folder
+    save_results(results, "projects/document_summarizer/output", timestamp)
+    save_text_summary(results, "projects/document_summarizer/output", timestamp)
 
 if __name__ == "__main__":
     main()
