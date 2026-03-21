@@ -1,0 +1,45 @@
+{
+    "parsed_data": {
+        "summary": "Q2 product planning meeting focused on mobile app redesign timeline and scope. Team decided to expand the redesign to include authentication flow fixes along with onboarding improvements, pushing the release date from April 15 to April 22.",
+        "decisions": [
+            "Include authentication flow fix in the mobile app redesign",
+            "Set new release target date for April 22 instead of April 15",
+            "Dark mode feature will be deferred to Q3 backlog"
+        ],
+        "action_items": [
+            {
+                "owner": "Marco Rivera",
+                "task": "Complete user research report",
+                "deadline": "Friday"
+            },
+            {
+                "owner": "Priya Patel",
+                "task": "Update project plan to reflect April 22 target date",
+                "deadline": "end of day tomorrow"
+            },
+            {
+                "owner": "Marco Rivera",
+                "task": "Add dark mode to Q3 backlog in Jira",
+                "deadline": null
+            },
+            {
+                "owner": "David Kim",
+                "task": "Set up meeting with Sarah and Priya to discuss pricing page",
+                "deadline": "Thursday"
+            }
+        ],
+        "open_questions": [
+            "Should the pricing page be redesigned along with the app"
+        ],
+        "attendees": [
+            "Sarah Chen",
+            "Marco Rivera",
+            "Priya Patel",
+            "David Kim"
+        ],
+        "meeting_date": "March 18, 2026"
+    },
+    "model": "claude-sonnet-4-20250514",
+    "input_tokens": 708,
+    "output_tokens": 310
+}

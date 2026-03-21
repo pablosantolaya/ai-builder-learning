@@ -1,0 +1,35 @@
+Meeting: Q2 Product Planning Sync
+Date: March 18, 2026
+Attendees: Sarah Chen, Marco Rivera, Priya Patel, David Kim
+
+Sarah: Alright, let's get started. Main thing today is figuring out the timeline for the mobile app redesign. Marco, where are we on the user research?
+
+Marco: We finished the interviews last week — talked to 12 users total. Main takeaway is that the onboarding flow is the biggest pain point. 8 out of 12 mentioned it specifically. I'll have the full report written up by Friday.
+
+Sarah: Good. Priya, does that change anything on the engineering side?
+
+Priya: Not really — we already knew onboarding was the priority. But if we're redesigning onboarding, we should also fix the authentication flow since they share a lot of the same code. It would be more work upfront but save us time later.
+
+Sarah: How much more time are we talking?
+
+Priya: Maybe an extra week. So instead of shipping by April 15, we'd be looking at April 22.
+
+David: From a marketing perspective, that's fine. We weren't planning the push until May anyway. But I need the final screenshots by April 25 at the latest for the campaign materials.
+
+Sarah: OK, let's do it. We'll include the auth flow fix in the redesign. Priya, can you update the project plan to reflect the new April 22 target?
+
+Priya: Sure, I'll update it by end of day tomorrow.
+
+Marco: One more thing — a few users asked about dark mode. Should we include that?
+
+Sarah: Not in this release. Let's keep scope tight. We can revisit dark mode for Q3. Add it to the backlog though.
+
+Marco: Got it. I'll add it to the Q3 backlog in Jira.
+
+David: Quick question — are we changing the pricing page too, or just the app? A couple of customers mentioned it was confusing.
+
+Sarah: Good point. Let's discuss that separately. David, can you set up a meeting with me and Priya for next week to look at the pricing page?
+
+David: Will do. I'll send the invite by Thursday.
+
+Sarah: Great. So to recap — we're going with the expanded redesign including auth, targeting April 22, and Marco's report is coming Friday. Anything else? OK, we're done.

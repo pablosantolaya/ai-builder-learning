@@ -32,6 +32,8 @@ def main():
     if args.output is None:
         args.output = os.path.join(OUTPUT_DIRECTORY, "results.json")
     
+    print(f"Saving to: {args.output}")
+
     save_results(results, args.output)
 
 if __name__ == "__main__":
