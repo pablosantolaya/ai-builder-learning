@@ -1,0 +1,23 @@
+MEETING SUMMARY
+Date: March 18, 2026
+Attendees: Sarah Chen, Marco Rivera, Priya Patel, David Kim
+
+
+Summary:
+The team discussed the mobile app redesign timeline and scope, deciding to expand the project to include authentication flow fixes along with onboarding improvements. The release date was pushed back one week to April 22 to accommodate the additional work.
+
+Decisions:
+   - Include authentication flow fix in the redesign project
+   - Target April 22 for redesign completion instead of April 15
+   - Dark mode feature will be deferred to Q3
+
+
+Action Items:
+   - Marco Rivera: Complete and deliver user research report (Friday)
+   - Priya Patel: Update project plan to reflect April 22 target (end of day tomorrow)
+   - Marco Rivera: Add dark mode to Q3 backlog in Jira
+   - David Kim: Set up meeting with Sarah and Priya to discuss pricing page (Thursday)
+
+
+Open Questions:
+   - How to address the confusing pricing page mentioned by customers
