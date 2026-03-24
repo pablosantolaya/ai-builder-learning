@@ -1,0 +1,74 @@
+[
+  {
+    "from": "boss@company.com",
+    "subject": "Q1 Review — Prep Materials Needed",
+    "body": "Hi, the Q1 review is tomorrow at 2pm. Please send me your team's numbers by end of day today so I can compile the deck.",
+    "date": "2026-03-24",
+    "read": false,
+    "has_attachment": false
+  },
+  {
+    "from": "it-support@company.com",
+    "subject": "Scheduled Maintenance Tonight 11pm-2am",
+    "body": "We will be performing server maintenance tonight from 11pm to 2am. All internal tools will be unavailable during this window.",
+    "date": "2026-03-24",
+    "read": false,
+    "has_attachment": false
+  },
+  {
+    "from": "alice@company.com",
+    "subject": "Re: Project Roadmap — Updated Draft",
+    "body": "I've attached the updated roadmap with your feedback incorporated. Let me know if you want to discuss before the Friday meeting.",
+    "date": "2026-03-24",
+    "read": false,
+    "has_attachment": true
+  },
+  {
+    "from": "newsletter@techdigest.io",
+    "subject": "This Week in AI — March Edition",
+    "body": "Top stories: GPT-5 benchmarks released, open-source models close the gap, and a deep dive into agentic workflows.",
+    "date": "2026-03-24",
+    "read": true,
+    "has_attachment": false
+  },
+  {
+    "from": "hr@company.com",
+    "subject": "Action Required: Benefits Enrollment Closes Friday",
+    "body": "This is a reminder that the open enrollment window for benefits closes this Friday March 27. Log in to the HR portal to confirm your selections.",
+    "date": "2026-03-23",
+    "read": false,
+    "has_attachment": false
+  },
+  {
+    "from": "bob@company.com",
+    "subject": "Quick question about the API integration",
+    "body": "Hey, I'm blocked on the auth token refresh logic. Do you have 15 minutes today to pair on it? Lmk what works.",
+    "date": "2026-03-24",
+    "read": false,
+    "has_attachment": false
+  },
+  {
+    "from": "finance@company.com",
+    "subject": "Invoice #4821 — Approved",
+    "body": "Your submitted invoice #4821 for $3,200 has been approved and will be processed in the next payment cycle (March 31).",
+    "date": "2026-03-23",
+    "read": true,
+    "has_attachment": true
+  },
+  {
+    "from": "carol@partner.org",
+    "subject": "Contract Renewal — Signature Needed",
+    "body": "Hi, our partnership contract is up for renewal. I've sent the updated agreement via DocuSign. Please sign by March 28 to avoid a lapse in service.",
+    "date": "2026-03-24",
+    "read": false,
+    "has_attachment": true
+  },
+  {
+    "from": "devops@company.com",
+    "subject": "Production Deploy — v2.4.1 Successful",
+    "body": "Just a heads up that v2.4.1 was deployed to production at 6:45am with no issues. Rollback is available if needed.",
+    "date": "2026-03-24",
+    "read": false,
+    "has_attachment": false
+  }
+]
