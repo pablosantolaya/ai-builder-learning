@@ -30,7 +30,7 @@ def sort_calendar(events):
 
 # --- API Call 1: Prioritize emails ---
 
-def call_1_prioritize_emails(client, unread_emails):
+def call_1_prioritize_emails(client, unread_emails, focus):
     """
     First API call: sends unread emails to Claude and asks it to rank them by urgency.
     Returns the prioritized list (parsed from Claude's JSON response) and token usage.
@@ -41,18 +41,26 @@ def call_1_prioritize_emails(client, unread_emails):
     # Serialize the email list into a string we can put inside the prompt
     emails_as_string = json.dumps(unread_emails, indent=2)
 
+    # Build the optional focus line BEFORE the prompt
+    if focus is not None:
+        focus_line = f"\nThe user's focus area today is '{focus}' - prioritize emails related to this topic higher.\n"
+    else:
+        focus_line = ""
+
     prompt = f"""You are an executive assistant helping prioritize a busy professional's morning.
 
 Here are today's unread emails:
 {emails_as_string}
 
-Rank these emails by urgency and importance. Return ONLY a valid JSON array where each item has:
+Rank these emails by urgency and importance. {focus_line} Return ONLY a valid JSON array where each item has:
 - "priority": a number from 1 (most urgent) to {len(unread_emails)} (least urgent)
 - "from": the sender
 - "subject": the subject line
 - "reason": one sentence explaining why you gave it this priority
 
 Return only the JSON array, no other text."""
+    
+
 
     response = client.messages.create(
         model=MODEL,

@@ -1,47 +1,47 @@
 {
-  "briefing": "**MORNING BRIEFING**\nTuesday, March 24, 2024\n\nGood morning! Here's what needs your attention today.\n\n**TOP PRIORITIES**\n\n1. **Q1 Review Prep Materials** (boss@company.com)\n   ACTION: Prepare materials by end of day for tomorrow's meeting. You have a 1-hour work block at 1:00 PM scheduled for this.\n\n2. **API Integration Question** (bob@company.com)  \n   ACTION: Answer Bob's technical question today - he's blocked on his work. You have a pairing session with him at 4:00 PM.\n\n3. **Benefits Enrollment** (hr@company.com)\n   ACTION: Complete enrollment by Friday to avoid coverage gaps. Handle this between meetings today.\n\n**TODAY'S SCHEDULE**\n\n\u2022 9:00-9:30 AM \u2014 Team Standup (Zoom)\n\u2022 11:00-11:30 AM \u2014 1:1 with Boss (Boss's Office)  \n\u2022 1:00-2:00 PM \u2014 Q1 Review Prep - Solo Work Block (Desk)\n\u2022 2:00-3:30 PM \u2014 Q1 Review Meeting (Conference Room B)\n\u2022 4:00-4:45 PM \u2014 API Integration Pairing Session (Zoom)\n\u2022 5:30-5:45 PM \u2014 End of Day Wrap-up (Desk)\n\n**WATCH LIST**\n\n\u2022 Contract renewal signature needed by March 28 (carol@partner.org)\n\u2022 Project roadmap draft to review for Friday's meeting (alice@company.com)  \n\u2022 System maintenance tonight 11 PM-2 AM (informational only)\n\nFocus on the Q1 prep and benefits enrollment between your scheduled meetings. You've got this!",
+  "briefing": "**MORNING BRIEFING - Tuesday, March 26, 2024**\n\nGood morning! Here's what needs your attention today.\n\n**TOP PRIORITIES**\n\n1. **Benefits Enrollment** (HR) - Action required by Friday. Handle this first to avoid missing the deadline.\n\n2. **Q1 Review Prep Materials** (Boss) - Needed for tomorrow's meeting. You have a 1:1 at 11am and prep block at 1pm to discuss/complete.\n\n3. **Contract Renewal Signature** (Carol) - Required by March 28 to prevent service disruption. Carol will be in your 9am standup if you want to address quickly.\n\n**TODAY'S SCHEDULE**\n\n\u2022 9:00-9:30am - Team Standup (Zoom) with Alice, Bob, Carol\n\u2022 11:00-11:30am - 1:1 with Boss (Boss's Office)\n\u2022 1:00-2:00pm - Q1 Review Prep - Solo Work Block (Desk)\n\u2022 2:00-3:30pm - Q1 Review Meeting (Conference Room B) with Boss, Alice, Finance\n\u2022 4:00-4:45pm - API Integration Pairing Session (Zoom) with Bob\n\u2022 5:30-5:45pm - End of Day Wrap-up (Desk)\n\n**WATCH LIST**\n\n\u2022 Alice sent an updated project roadmap draft that may need review before Friday\n\u2022 Bob has API questions (conveniently scheduled for 4pm pairing session)\n\u2022 IT maintenance tonight 11pm-2am (plan accordingly)\n\nYour day flows well with Q1 prep strategically placed before the review meeting. Focus on those top 3 priorities and you'll be in good shape.",
   "prioritized_emails": [
     {
       "priority": 1,
-      "from": "boss@company.com",
-      "subject": "Q1 Review \u2014 Prep Materials Needed",
-      "reason": "This has a hard deadline of end of day today and comes directly from your boss for tomorrow's important meeting."
+      "from": "hr@company.com",
+      "subject": "Action Required: Benefits Enrollment Closes Friday",
+      "reason": "This directly relates to your focus area of 'benefits' and has a hard deadline of Friday that requires immediate action."
     },
     {
       "priority": 2,
-      "from": "bob@company.com",
-      "subject": "Quick question about the API integration",
-      "reason": "A team member is blocked on work and needs your help today to continue making progress."
+      "from": "boss@company.com",
+      "subject": "Q1 Review \u2014 Prep Materials Needed",
+      "reason": "Time-sensitive request from your boss with an end-of-day deadline for tomorrow's meeting."
     },
     {
       "priority": 3,
-      "from": "hr@company.com",
-      "subject": "Action Required: Benefits Enrollment Closes Friday",
-      "reason": "This requires action within 3 days and missing the deadline could affect your benefits coverage."
+      "from": "carol@partner.org",
+      "subject": "Contract Renewal \u2014 Signature Needed",
+      "reason": "Important contract requiring signature by March 28 to avoid service disruption."
     },
     {
       "priority": 4,
-      "from": "carol@partner.org",
-      "subject": "Contract Renewal \u2014 Signature Needed",
-      "reason": "Contract signature is needed by March 28 to avoid service interruption, giving you 4 days to complete."
+      "from": "alice@company.com",
+      "subject": "Re: Project Roadmap \u2014 Updated Draft",
+      "reason": "Work deliverable with attachment that may need review before Friday meeting."
     },
     {
       "priority": 5,
-      "from": "alice@company.com",
-      "subject": "Re: Project Roadmap \u2014 Updated Draft",
-      "reason": "This is important for Friday's meeting but can be reviewed later today or tomorrow without immediate consequences."
+      "from": "bob@company.com",
+      "subject": "Quick question about the API integration",
+      "reason": "Colleague is blocked and needs help today, but can likely be scheduled flexibly."
     },
     {
       "priority": 6,
       "from": "it-support@company.com",
       "subject": "Scheduled Maintenance Tonight 11pm-2am",
-      "reason": "This is informational about tonight's maintenance window and requires no immediate action from you."
+      "reason": "Important information but no action required, just awareness for planning."
     },
     {
       "priority": 7,
       "from": "devops@company.com",
       "subject": "Production Deploy \u2014 v2.4.1 Successful",
-      "reason": "This is a routine status update confirming successful deployment with no issues or action required."
+      "reason": "Informational update about successful deployment with no issues requiring attention."
     }
   ],
   "sorted_calendar": [
@@ -102,16 +102,16 @@
   ],
   "token_usage": {
     "call_1": {
-      "input_tokens": 833,
-      "output_tokens": 486
+      "input_tokens": 858,
+      "output_tokens": 466
     },
     "call_2": {
-      "input_tokens": 1086,
-      "output_tokens": 412
+      "input_tokens": 1066,
+      "output_tokens": 403
     },
     "total": {
-      "input_tokens": 1919,
-      "output_tokens": 898
+      "input_tokens": 1924,
+      "output_tokens": 869
     }
   }
 }

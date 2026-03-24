@@ -1,32 +1,28 @@
-**MORNING BRIEFING**
-Tuesday, March 24, 2024
+**MORNING BRIEFING - Tuesday, March 26, 2024**
 
 Good morning! Here's what needs your attention today.
 
 **TOP PRIORITIES**
 
-1. **Q1 Review Prep Materials** (boss@company.com)
-   ACTION: Prepare materials by end of day for tomorrow's meeting. You have a 1-hour work block at 1:00 PM scheduled for this.
+1. **Benefits Enrollment** (HR) - Action required by Friday. Handle this first to avoid missing the deadline.
 
-2. **API Integration Question** (bob@company.com)  
-   ACTION: Answer Bob's technical question today - he's blocked on his work. You have a pairing session with him at 4:00 PM.
+2. **Q1 Review Prep Materials** (Boss) - Needed for tomorrow's meeting. You have a 1:1 at 11am and prep block at 1pm to discuss/complete.
 
-3. **Benefits Enrollment** (hr@company.com)
-   ACTION: Complete enrollment by Friday to avoid coverage gaps. Handle this between meetings today.
+3. **Contract Renewal Signature** (Carol) - Required by March 28 to prevent service disruption. Carol will be in your 9am standup if you want to address quickly.
 
 **TODAY'S SCHEDULE**
 
-• 9:00-9:30 AM — Team Standup (Zoom)
-• 11:00-11:30 AM — 1:1 with Boss (Boss's Office)  
-• 1:00-2:00 PM — Q1 Review Prep - Solo Work Block (Desk)
-• 2:00-3:30 PM — Q1 Review Meeting (Conference Room B)
-• 4:00-4:45 PM — API Integration Pairing Session (Zoom)
-• 5:30-5:45 PM — End of Day Wrap-up (Desk)
+• 9:00-9:30am - Team Standup (Zoom) with Alice, Bob, Carol
+• 11:00-11:30am - 1:1 with Boss (Boss's Office)
+• 1:00-2:00pm - Q1 Review Prep - Solo Work Block (Desk)
+• 2:00-3:30pm - Q1 Review Meeting (Conference Room B) with Boss, Alice, Finance
+• 4:00-4:45pm - API Integration Pairing Session (Zoom) with Bob
+• 5:30-5:45pm - End of Day Wrap-up (Desk)
 
 **WATCH LIST**
 
-• Contract renewal signature needed by March 28 (carol@partner.org)
-• Project roadmap draft to review for Friday's meeting (alice@company.com)  
-• System maintenance tonight 11 PM-2 AM (informational only)
+• Alice sent an updated project roadmap draft that may need review before Friday
+• Bob has API questions (conveniently scheduled for 4pm pairing session)
+• IT maintenance tonight 11pm-2am (plan accordingly)
 
-Focus on the Q1 prep and benefits enrollment between your scheduled meetings. You've got this!
+Your day flows well with Q1 prep strategically placed before the review meeting. Focus on those top 3 priorities and you'll be in good shape.

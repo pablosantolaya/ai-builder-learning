@@ -41,6 +41,10 @@ def parse_args():
         default=OUTPUT_DIR,
         help="Folder to save output files (default: output/)"
     )
+    parser.add_argument(
+        "--focus",
+        help="Focus area to prioritize (e.g., finance, operations)"
+    )
 
     # Mutually exclusive flags: user can ask for JSON only or text only
     # If neither is passed, both outputs are saved
@@ -84,7 +88,7 @@ def main():
     # --- Step 3: API Call 1 — prioritize unread emails ---
     print("\nCall 1: Prioritizing emails...")
     client = anthropic.Anthropic(api_key=api_key)
-    prioritized_emails, tokens_call1 = call_1_prioritize_emails(client, unread_emails)
+    prioritized_emails, tokens_call1 = call_1_prioritize_emails(client, unread_emails,args.focus)
     print(f"  Tokens used — input: {tokens_call1['input_tokens']}, output: {tokens_call1['output_tokens']}")
 
     # --- Step 4: API Call 2 — generate full briefing ---
