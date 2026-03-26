@@ -1,0 +1,21 @@
+Posted Date,Reference Number,Payee,Address,Amount
+2026-03-01,REF001,Starbucks,123 Main St,5.75
+2026-03-01,REF002,Uber,App Purchase,14.20
+2026-03-02,REF003,Amazon,Online,67.99
+2026-03-02,REF004,Netflix,Online,15.99
+2026-03-03,REF005,Whole Foods,456 Oak Ave,82.34
+2026-03-03,REF006,Spotify,Online,9.99
+2026-03-04,REF007,Shell Gas Station,789 Highway Rd,54.10
+2026-03-04,REF008,CVS Pharmacy,321 Elm St,23.47
+2026-03-05,REF009,United Airlines,Online,342.00
+2026-03-05,REF010,Chipotle,555 Food Court,12.85
+2026-03-06,REF011,Duolingo,Online,6.99
+2026-03-06,REF012,Lyft,App Purchase,9.50
+2026-03-07,REF013,Target,900 Shopping Blvd,45.62
+2026-03-07,REF014,Hulu,Online,17.99
+2026-03-10,REF015,Trader Joes,222 Market St,61.20
+2026-03-10,REF016,Planet Fitness,100 Gym Lane,24.99
+2026-03-12,REF017,Comcast,Online,89.99
+2026-03-14,REF018,Zara,Downtown Mall,78.50
+2026-03-17,REF019,Airbnb,Online,215.00
+2026-03-20,REF020,McDonalds,44 Fast Food Row,8.43
