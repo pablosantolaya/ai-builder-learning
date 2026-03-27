@@ -117,6 +117,7 @@ def save_text_report(report, output_dir, timestamp):
 
     # Pull the summary section out of the report dict
     s = report.get("summary", {})
+    monthly_trends = report.get("monthly_trends", {})
 
     with open(filepath, "w", encoding="utf-8") as f:
         f.write("=" * 50 + "\n")
@@ -138,6 +139,13 @@ def save_text_report(report, output_dir, timestamp):
         f.write("\n── Top Transactions ──────────────────────────\n")
         for txn in s.get("top_n_transactions", []):
             f.write(f"  {txn['date']}  {txn['payee']:<25} ${txn['amount']:.2f}  [{txn.get('category', '?')}]\n")
+
+        f.write("\n── Monthly Trends ────────────────────────── \n")
+        # Sort months chronologically for easy scanning
+        for month, data in sorted(monthly_trends.items()):
+            f.write(f"  {month}: ${data['total']:.2f} total\n")
+            for category, amount in sorted(data["category_totals"].items(), key=lambda x: x[1], reverse=True):
+                f.write(f"    {category:<15} ${amount:.2f}\n")
 
     print(f"  Text report saved  -> {filepath}")
     return filepath

@@ -1,0 +1,46 @@
+==================================================
+   PERSONAL FINANCE REPORT
+   Generated: 20260327_155706
+==================================================
+
+Total Spending:      $2853.60
+Transactions:        120
+Daily Average:       $142.68
+Categories Used:     9
+
+── Spending by Category ──────────────────────
+  Food            $1215.74
+  Education       $620.00
+  Entertainment   $555.01
+  Transport       $163.60
+  Health          $106.86
+  Shopping        $102.99
+  Travel          $59.00
+  Subscriptions   $22.00
+  Other           $8.40
+
+── Top Transactions ──────────────────────────
+  03/10/2026  USCIS ELIS I765 800-375-5283 DC $470.00  [Education]
+  03/02/2026  TM *TICKETMASTER 800-653-8000 CA $268.62  [Entertainment]
+  03/04/2026  MIT INT STUDENTS OFF 617-253-3795 MA $150.00  [Education]
+  03/02/2026  TST* SCORES - BOSTON BOSTON MA $132.14  [Entertainment]
+  02/21/2026  BUS CAMPUS GROUP 212-854-0356 NY $130.00  [Transport]
+
+── Monthly Trends ────────────────────────── 
+  2026-02: $612.20 total
+    Food            $301.09
+    Transport       $144.40
+    Entertainment   $55.75
+    Shopping        $45.96
+    Health          $45.00
+    Subscriptions   $20.00
+  2026-03: $2241.40 total
+    Food            $914.65
+    Education       $620.00
+    Entertainment   $499.26
+    Health          $61.86
+    Travel          $59.00
+    Shopping        $57.03
+    Transport       $19.20
+    Other           $8.40
+    Subscriptions   $2.00

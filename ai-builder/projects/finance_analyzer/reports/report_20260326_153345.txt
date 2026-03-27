@@ -1,0 +1,25 @@
+==================================================
+   PERSONAL FINANCE REPORT
+   Generated: 20260326_153345
+==================================================
+
+Total Spending:      $1186.89
+Transactions:        20
+Daily Average:       $98.91
+Categories Used:     7
+
+── Spending by Category ──────────────────────
+  Travel          $557.00
+  Shopping        $192.11
+  Food            $170.57
+  Utilities       $89.99
+  Transport       $77.80
+  Subscriptions   $50.96
+  Health          $48.46
+
+── Top Transactions ──────────────────────────
+  2026-03-05  United Airlines           $342.00  [Travel]
+  2026-03-17  Airbnb                    $215.00  [Travel]
+  2026-03-12  Comcast                   $89.99  [Utilities]
+  2026-03-03  Whole Foods               $82.34  [Food]
+  2026-03-14  Zara                      $78.50  [Shopping]

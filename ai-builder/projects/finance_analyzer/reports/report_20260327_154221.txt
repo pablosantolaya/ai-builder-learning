@@ -1,0 +1,100 @@
+==================================================
+   PERSONAL FINANCE REPORT
+   Generated: 20260327_154221
+==================================================
+
+Total Spending:      $2853.60
+Transactions:        120
+Daily Average:       $142.68
+Categories Used:     9
+
+── Spending by Category ──────────────────────
+  Food            $1171.13
+  Education       $620.00
+  Entertainment   $555.01
+  Shopping        $192.60
+  Transport       $163.60
+  Health          $61.86
+  Travel          $59.00
+  Subscriptions   $22.00
+  Other           $8.40
+
+── Top Transactions ──────────────────────────
+  03/10/2026  USCIS ELIS I765 800-375-5283 DC $470.00  [Education]
+  03/02/2026  TM *TICKETMASTER 800-653-8000 CA $268.62  [Entertainment]
+  03/04/2026  MIT INT STUDENTS OFF 617-253-3795 MA $150.00  [Education]
+  03/02/2026  TST* SCORES - BOSTON BOSTON MA $132.14  [Entertainment]
+  02/21/2026  BUS CAMPUS GROUP 212-854-0356 NY $130.00  [Transport]
+
+── Monthly Trends ────────────────────────── 
+  02/21/2: $235.89 total
+    Transport       $130.00
+    Food            $75.41
+    Entertainment   $30.48
+  02/23/2: $80.69 total
+    Food            $75.89
+    Transport       $4.80
+  02/25/2: $95.10 total
+    Food            $47.70
+    Shopping        $45.00
+    Transport       $2.40
+  02/26/2: $52.95 total
+    Shopping        $20.04
+    Subscriptions   $20.00
+    Food            $8.11
+    Transport       $4.80
+  02/27/2: $85.13 total
+    Food            $64.84
+    Entertainment   $11.50
+    Shopping        $6.39
+    Transport       $2.40
+  02/28/2: $62.44 total
+    Food            $48.67
+    Entertainment   $13.77
+  03/02/2: $677.38 total
+    Entertainment   $441.16
+    Food            $171.78
+    Health          $53.64
+    Other           $8.40
+    Transport       $2.40
+  03/03/2: $52.53 total
+    Food            $52.53
+  03/04/2: $243.61 total
+    Education       $150.00
+    Travel          $59.00
+    Food            $29.81
+    Transport       $4.80
+  03/05/2: $33.41 total
+    Food            $29.01
+    Transport       $2.40
+    Subscriptions   $2.00
+  03/06/2: $57.83 total
+    Food            $57.83
+  03/07/2: $39.48 total
+    Food            $37.08
+    Transport       $2.40
+  03/09/2: $115.83 total
+    Food            $89.04
+    Shopping        $18.57
+    Health          $8.22
+  03/10/2: $514.37 total
+    Education       $470.00
+    Food            $39.57
+    Transport       $4.80
+  03/11/2: $52.66 total
+    Shopping        $29.44
+    Food            $20.82
+    Transport       $2.40
+  03/12/2: $43.63 total
+    Food            $34.61
+    Shopping        $9.02
+  03/13/2: $54.55 total
+    Food            $54.55
+  03/14/2: $86.78 total
+    Entertainment   $58.10
+    Food            $28.68
+  03/16/2: $226.89 total
+    Food            $162.75
+    Shopping        $64.14
+  03/17/2: $42.45 total
+    Food            $42.45

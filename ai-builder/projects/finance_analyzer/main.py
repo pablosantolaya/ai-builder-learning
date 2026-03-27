@@ -30,7 +30,7 @@ sys.path.insert(0, os.path.dirname(__file__))
 from config import OUTPUT_DIR, DEFAULT_TOP_N
 from file_utils import read_and_validate_csv, save_json_report, save_text_report
 from categorizer import categorize_all
-from analyzer import calculate_summary
+from analyzer import calculate_summary, calculate_monthly_trends
 
 
 def main():
@@ -109,6 +109,14 @@ def main():
     print(f"  Categories used: {summary['category_count']}")
     print(f"  Daily average:   ${summary['daily_average']:.2f}")
     print()
+    monthly_trends = calculate_monthly_trends(categorized_transactions)
+    print("  Monthly trends:")
+    for month, data in monthly_trends.items():
+        print(f"    {month}: ${data['total']:.2f} total")
+        for category, amount in data["category_totals"].items():
+            print(f"      {category}: ${amount:.2f}")
+    print()
+
 
     # ── Step 4: Save reports ───────────────────────────────────────────────────
     print("[ Step 4 ] Saving reports...")
@@ -122,6 +130,7 @@ def main():
         "input_file":   input_path,
         "summary":      summary,
         "transactions": categorized_transactions,
+        "monthly_trends": monthly_trends,
     }
 
     save_json_report(report, args.output, timestamp)

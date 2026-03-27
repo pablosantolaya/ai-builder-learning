@@ -1,0 +1,173 @@
+{
+  "generated_at": "20260326_153207",
+  "input_file": "C:\\Users\\Pablo Santolaya\\Documents\\CLAUDE learning project\\ai-builder\\projects\\finance_analyzer\\mock_data/transactions.csv",
+  "summary": {
+    "total_spending": 1186.89,
+    "spending_by_category": {
+      "Food": 170.57,
+      "Transport": 77.8,
+      "Shopping": 192.11,
+      "Subscriptions": 75.95,
+      "Health": 23.47,
+      "Travel": 557.0,
+      "Utilities": 89.99
+    },
+    "top_n_transactions": [
+      {
+        "date": "2026-03-05",
+        "payee": "United Airlines",
+        "amount": 342.0,
+        "category": "Travel"
+      },
+      {
+        "date": "2026-03-17",
+        "payee": "Airbnb",
+        "amount": 215.0,
+        "category": "Travel"
+      },
+      {
+        "date": "2026-03-12",
+        "payee": "Comcast",
+        "amount": 89.99,
+        "category": "Utilities"
+      },
+      {
+        "date": "2026-03-03",
+        "payee": "Whole Foods",
+        "amount": 82.34,
+        "category": "Food"
+      },
+      {
+        "date": "2026-03-14",
+        "payee": "Zara",
+        "amount": 78.5,
+        "category": "Shopping"
+      }
+    ],
+    "daily_average": 98.91,
+    "transaction_count": 20,
+    "category_count": 7
+  },
+  "transactions": [
+    {
+      "date": "2026-03-01",
+      "payee": "Starbucks",
+      "amount": 5.75,
+      "category": "Food"
+    },
+    {
+      "date": "2026-03-01",
+      "payee": "Uber",
+      "amount": 14.2,
+      "category": "Transport"
+    },
+    {
+      "date": "2026-03-02",
+      "payee": "Amazon",
+      "amount": 67.99,
+      "category": "Shopping"
+    },
+    {
+      "date": "2026-03-02",
+      "payee": "Netflix",
+      "amount": 15.99,
+      "category": "Subscriptions"
+    },
+    {
+      "date": "2026-03-03",
+      "payee": "Whole Foods",
+      "amount": 82.34,
+      "category": "Food"
+    },
+    {
+      "date": "2026-03-03",
+      "payee": "Spotify",
+      "amount": 9.99,
+      "category": "Subscriptions"
+    },
+    {
+      "date": "2026-03-04",
+      "payee": "Shell Gas Station",
+      "amount": 54.1,
+      "category": "Transport"
+    },
+    {
+      "date": "2026-03-04",
+      "payee": "CVS Pharmacy",
+      "amount": 23.47,
+      "category": "Health"
+    },
+    {
+      "date": "2026-03-05",
+      "payee": "United Airlines",
+      "amount": 342.0,
+      "category": "Travel"
+    },
+    {
+      "date": "2026-03-05",
+      "payee": "Chipotle",
+      "amount": 12.85,
+      "category": "Food"
+    },
+    {
+      "date": "2026-03-06",
+      "payee": "Duolingo",
+      "amount": 6.99,
+      "category": "Subscriptions"
+    },
+    {
+      "date": "2026-03-06",
+      "payee": "Lyft",
+      "amount": 9.5,
+      "category": "Transport"
+    },
+    {
+      "date": "2026-03-07",
+      "payee": "Target",
+      "amount": 45.62,
+      "category": "Shopping"
+    },
+    {
+      "date": "2026-03-07",
+      "payee": "Hulu",
+      "amount": 17.99,
+      "category": "Subscriptions"
+    },
+    {
+      "date": "2026-03-10",
+      "payee": "Trader Joes",
+      "amount": 61.2,
+      "category": "Food"
+    },
+    {
+      "date": "2026-03-10",
+      "payee": "Planet Fitness",
+      "amount": 24.99,
+      "category": "Subscriptions"
+    },
+    {
+      "date": "2026-03-12",
+      "payee": "Comcast",
+      "amount": 89.99,
+      "category": "Utilities"
+    },
+    {
+      "date": "2026-03-14",
+      "payee": "Zara",
+      "amount": 78.5,
+      "category": "Shopping"
+    },
+    {
+      "date": "2026-03-17",
+      "payee": "Airbnb",
+      "amount": 215.0,
+      "category": "Travel"
+    },
+    {
+      "date": "2026-03-20",
+      "payee": "McDonalds",
+      "amount": 8.43,
+      "category": "Food"
+    }
+  ]
+}
