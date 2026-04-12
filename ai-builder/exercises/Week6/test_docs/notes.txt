@@ -1,0 +1,1 @@
+Machine learning models require large amounts of training data to perform well. The quality of the data matters as much as the quantity. Poorly labeled data leads to unreliable predictions, even with sophisticated algorithms. Data cleaning is often the most time-consuming part of any ML project.
