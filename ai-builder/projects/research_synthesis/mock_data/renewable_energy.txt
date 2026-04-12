@@ -1,0 +1,14 @@
+The Economics of Renewable Energy Transition
+Energy Policy Research Center — Working Paper, March 2025
+
+The cost of solar photovoltaic (PV) energy has fallen 89% since 2010, making it the cheapest source of new electricity generation in history. In 2024, the levelized cost of energy (LCOE) for utility-scale solar reached $28 per megawatt-hour (MWh) in high-sunshine regions — well below the $55–85/MWh range for new natural gas plants and far cheaper than new coal at $65–150/MWh. Wind energy follows a similar trajectory, with onshore wind at $26–50/MWh.
+
+These cost declines have triggered a global investment surge. In 2024, renewable energy attracted $1.7 trillion in investment — more than three times the investment in fossil fuel infrastructure. This is the first year in which clean energy investment has outpaced fossil fuels by such a margin, marking what analysts describe as an inflection point in energy markets.
+
+However, the economics of renewables are more complex when grid integration costs are factored in. Solar and wind are intermittent — they only generate power when the sun shines or wind blows. Storing that energy or balancing the grid when generation is low requires either battery storage or backup generation capacity. Current lithium-ion battery storage costs of $120–150/kWh add significantly to the effective cost of fully renewable systems, and battery production depends on lithium, cobalt, and rare earth minerals whose supply chains carry their own environmental and geopolitical risks.
+
+Critics of rapid renewable deployment argue that the true system cost — including storage, grid upgrades, and backup capacity — makes renewables less competitive than headline LCOE figures suggest. A 2024 analysis by the Center for Energy Economics estimated that a fully renewable grid in a mid-latitude region would cost 35–50% more per unit of reliable electricity than a gas-and-renewable hybrid approach.
+
+Proponents counter that battery costs are falling rapidly — down 60% since 2018 — and that long-duration storage technologies such as iron-air batteries and pumped hydro are approaching commercial viability. They argue that comparing present-day storage costs to future renewable costs overstates the challenge.
+
+The consensus among energy economists is that renewable energy is unambiguously the cheapest option for new generation capacity, but the path to a fully decarbonized grid requires parallel investment in storage, grid infrastructure, and demand flexibility — investments that current market structures often fail to incentivize adequately.
