@@ -1,0 +1,49 @@
+[
+  {
+    "task": "What is 847 times 23?",
+    "completed": true,
+    "steps": 2,
+    "tools_used": [
+      "calculate"
+    ]
+  },
+  {
+    "task": "Find my notes about functions",
+    "completed": true,
+    "steps": 2,
+    "tools_used": [
+      "search_notes"
+    ]
+  },
+  {
+    "task": "Find my notes about APIs and summarize them",
+    "completed": true,
+    "steps": 4,
+    "tools_used": [
+      "search_notes",
+      "search_notes",
+      "summarize_text"
+    ]
+  },
+  {
+    "task": "What is 15% of 2340, and save the result as tip_calc.txt",
+    "completed": true,
+    "steps": 3,
+    "tools_used": [
+      "calculate",
+      "save_result"
+    ]
+  },
+  {
+    "task": "Find my notes about agents, summarize them, and save as agent_summary.txt",
+    "completed": true,
+    "steps": 6,
+    "tools_used": [
+      "search_notes",
+      "search_notes",
+      "search_notes",
+      "summarize_text",
+      "save_result"
+    ]
+  }
+]

@@ -1,0 +1,80 @@
+Python Functions — Learning Notes
+
+DEFINING FUNCTIONS
+Use the def keyword followed by the function name and parentheses.
+Indented code below the def line is the function body.
+Example:
+  def greet(name):
+      return f"Hello, {name}!"
+
+PARAMETERS AND ARGUMENTS
+Parameters are the variable names listed in the function definition.
+Arguments are the actual values you pass when calling the function.
+  def add(a, b):       # a and b are parameters
+      return a + b
+
+  result = add(3, 5)   # 3 and 5 are arguments
+
+DEFAULT PARAMETER VALUES
+You can give parameters a default value so they are optional.
+  def power(base, exponent=2):
+      return base ** exponent
+
+  power(4)     # returns 16  (exponent defaults to 2)
+  power(4, 3)  # returns 64
+
+RETURN VALUES
+Functions return None by default if you don't use a return statement.
+Use return to send a value back to the caller.
+  def square(n):
+      return n * n
+
+MULTIPLE RETURN VALUES
+Python functions can return multiple values as a tuple.
+  def min_max(numbers):
+      return min(numbers), max(numbers)
+
+  low, high = min_max([3, 1, 7, 2])
+
+*ARGS — VARIABLE POSITIONAL ARGUMENTS
+Use *args to accept any number of positional arguments as a tuple.
+  def total(*args):
+      return sum(args)
+
+  total(1, 2, 3)       # returns 6
+  total(10, 20)        # returns 30
+
+**KWARGS — VARIABLE KEYWORD ARGUMENTS
+Use **kwargs to accept any number of keyword arguments as a dict.
+  def describe(**kwargs):
+      for key, value in kwargs.items():
+          print(f"{key}: {value}")
+
+  describe(name="Alice", age=30)
+
+LAMBDA FUNCTIONS
+A lambda is a short anonymous function written on one line.
+  square = lambda x: x * x
+  double = lambda x: x * 2
+
+  sorted_list = sorted(items, key=lambda x: x["price"])
+
+SCOPE
+Variables defined inside a function are local — they don't exist outside.
+Variables defined outside are global — accessible inside but not modifiable
+without the global keyword.
+
+DOCSTRINGS
+Add a triple-quoted string right after def to document your function.
+  def add(a, b):
+      """Return the sum of a and b."""
+      return a + b
+
+  help(add)  # shows the docstring
+
+FIRST-CLASS FUNCTIONS
+Functions are objects in Python — you can pass them as arguments.
+  def apply(func, value):
+      return func(value)
+
+  apply(square, 5)   # returns 25

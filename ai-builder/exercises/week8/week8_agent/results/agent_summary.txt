@@ -1,0 +1,3 @@
+AI AGENTS SUMMARY
+
+An AI agent is an autonomous model that can take actions and decide which tools to use in sequence, rather than just answering questions. Agents are most effective for complex, multi-step tasks where each step depends on previous results, and they work by maintaining a conversation history and automatically chaining multiple tools together. They should be used instead of single API calls when tasks require multiple steps, information retrieval, or coordinated actions.

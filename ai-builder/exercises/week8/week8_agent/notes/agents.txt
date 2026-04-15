@@ -1,0 +1,87 @@
+AI Agents — Learning Notes
+
+WHAT IS AN AI AGENT?
+An agent is an AI model that can take actions, not just answer questions.
+It has access to tools (functions it can call) and uses them to complete tasks.
+The agent decides which tools to use and in what order — autonomously.
+
+THE AGENT LOOP
+The core pattern: call the model → check the result → act on tools → repeat.
+
+  while not done:
+      response = call_model(messages, tools)
+      if response.stop_reason == "end_turn":
+          print(response.final_answer)
+          break
+      else:
+          execute the tools the model requested
+          append tool results to message history
+          loop again
+
+STOP REASONS
+The model tells you why it stopped generating via stop_reason:
+  "end_turn"  — the model finished its answer, no more tools needed
+  "tool_use"  — the model wants to call one or more tools before continuing
+  "max_tokens"— the response hit the token limit (handle or increase max_tokens)
+
+TOOL CALLING FLOW
+1. You define tools with a name, description, and input_schema (JSON schema).
+2. You pass the tools list to the API call.
+3. The model returns tool_use blocks when it wants to call a tool.
+4. You run the tool function and capture the result.
+5. You append a tool_result block to the messages and call the model again.
+6. The model sees the result and continues reasoning.
+
+TOOL USE BLOCKS
+When the model calls a tool the response contains a block like:
+  {
+    "type": "tool_use",
+    "id": "toolu_01ABC...",
+    "name": "search_notes",
+    "input": {"keyword": "functions"}
+  }
+
+TOOL RESULT BLOCKS
+You send results back as a user message containing:
+  {
+    "type": "tool_result",
+    "tool_use_id": "toolu_01ABC...",   # must match the tool_use id
+    "content": "the result as a string"
+  }
+
+MESSAGE HISTORY
+The agent maintains a list of all messages — user, assistant, and tool results.
+This is how the model remembers what happened across multiple steps.
+Never trim this list mid-task or the model loses context.
+
+  messages = [{"role": "user", "content": "original task"}]
+  # after each step, append assistant response and tool results
+  messages.append({"role": "assistant", "content": response.content})
+  messages.append({"role": "user", "content": tool_results})
+
+MAX ITERATIONS / SAFETY GUARD
+Always set a maximum number of loop iterations (e.g. max_iterations = 10).
+This prevents infinite loops if the model keeps requesting tools endlessly.
+Log each iteration so you can debug unexpected behavior.
+
+MULTI-STEP REASONING
+Agents shine on tasks that require chaining multiple tools:
+  1. Search for notes about APIs
+  2. Summarize the found notes
+  3. Save the summary to a file
+  Each step depends on the previous — the agent handles this automatically.
+
+SYSTEM PROMPT FOR AGENTS
+Give the agent a clear role and list its available capabilities.
+  "You are a helpful assistant with access to notes, a calculator,
+   summarization, and file saving. Use tools when needed to complete tasks."
+
+WHEN TO USE AN AGENT vs. A SINGLE API CALL
+Single call: the task is a direct question with a known answer.
+Agent: the task requires multiple steps, information retrieval, or actions.
+
+TOOL DESIGN TIPS
+- Keep each tool focused on one thing (single responsibility).
+- Return strings from tools — the model treats all tool results as text.
+- Include clear descriptions so the model knows when to use each tool.
+- Validate inputs inside the tool and return informative error strings.
