@@ -126,3 +126,6 @@ def save_result(filename, content):
         f.write(content)
 
     return f"Saved to results/{filename}"
+
+def think(thought: str) -> str:
+    return f"Thought recorded: {thought}"

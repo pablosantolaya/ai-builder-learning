@@ -15,7 +15,7 @@ from dotenv import load_dotenv
 import anthropic
 
 from tool_schemas import TOOL_SCHEMAS
-from tools import search_notes, calculate, summarize_text, save_result
+from tools import search_notes, calculate, summarize_text, save_result, think
 
 # ── Configuration ────────────────────────────────────────────────────────────
 
@@ -38,6 +38,7 @@ TOOL_FUNCTIONS = {
     "calculate": calculate,
     "summarize_text": summarize_text,
     "save_result": save_result,
+    "think": think,
 }
 
 # Anchor the results/ folder to this file's location, not the CWD.
@@ -106,12 +107,18 @@ def run_agent(user_input, client):
 
         for block in response.content:
             if block.type == "tool_use":
-                print(f"  Step {iteration}: calling {block.name}")
+                if block.name == "think":
+                    print(f"  Step {iteration}: [thinking] {block.input.get('thought', '')[:100]}")
+                else:
+                    print(f"  Step {iteration}: calling {block.name}")
                 tools_used.append(block.name)
 
                 # Dispatch to the matching Python function
                 tool_fn = TOOL_FUNCTIONS[block.name]
-                result = tool_fn(**block.input)
+                try:
+                    result = tool_fn(**block.input)
+                except Exception as e:
+                    result = f"Error in {block.name}: {type(e).__name__}: {e}"
 
                 # Tool results must be strings; convert anything that isn't
                 tool_results.append({

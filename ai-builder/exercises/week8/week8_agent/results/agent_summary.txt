@@ -1,3 +1,15 @@
-AI AGENTS SUMMARY
+AGENT SUMMARY
 
-An AI agent is an autonomous model that can take actions and decide which tools to use in sequence, rather than just answering questions. Agents are most effective for complex, multi-step tasks where each step depends on previous results, and they work by maintaining a conversation history and automatically chaining multiple tools together. They should be used instead of single API calls when tasks require multiple steps, information retrieval, or coordinated actions.
+An AI agent is an autonomous AI model with access to tools (functions) that it can call to complete tasks, deciding which tools to use and in what order. The core pattern involves repeatedly calling the model, checking if it wants to use tools, executing those tools if needed, and feeding results back into the conversation loop. Agents are most useful for complex, multi-step tasks like research, data analysis, and workflows that require chaining multiple tools together.
+
+KEY POINTS:
+- Agents autonomously decide which tools to use and in what order
+- Core loop: call model → check result → execute tools → repeat
+- Tools are defined with name, description, and input schema
+- Model returns tool_use blocks to request tool execution
+- Results are sent back as tool_result blocks with matching IDs
+- Tool descriptions should be clear so the model knows when to use them
+- Each tool should focus on one responsibility
+- Tools should validate inputs and return informative errors
+- Max token limits can prevent infinite loops
+- Best for multi-step tasks requiring tool chaining

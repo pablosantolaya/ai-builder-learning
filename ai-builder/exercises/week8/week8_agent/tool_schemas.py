@@ -76,5 +76,19 @@ TOOL_SCHEMAS = [
             },
             "required": ["filename", "content"]
         }
+    },
+    {
+    "name": "think",
+    "description": "Use this tool to think through a problem before acting. Write out your reasoning step by step. This does not produce any output — it just helps you plan.",
+    "input_schema": {
+        "type": "object",
+        "properties": {
+            "thought": {
+                "type": "string",
+                "description": "Your reasoning or plan"
+                }
+            },
+        "required": ["thought"]
+        }
     }
 ]
