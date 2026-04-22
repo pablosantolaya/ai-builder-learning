@@ -12,6 +12,7 @@ class TaskState:
         self.errors = []              # List of error strings
         self.answer = ""              # The final text Claude returns at end_turn
         self.tools_used = []          # List of tool names called (for run_evaluation)
+        self.retry_counts = {}        # Dict: tool_name → number of retries
 
     def add_step(self, description: str):
         """Log that a tool call is about to happen."""
@@ -51,3 +52,15 @@ class TaskState:
             f"Results accumulated: {result_keys}\n"
             f"Errors so far: {len(self.errors)}"
         )
+
+    def record_retry(self, tool_name: str):
+        """Increment the retry count for a given tool."""
+        if tool_name not in self.retry_counts:
+            self.retry_counts[tool_name] = 0
+        self.retry_counts[tool_name] += 1
+        print(f"[Retry] {tool_name} has been retried {self.retry_counts[tool_name]} times")
+
+    def can_retry(self, tool_name: str, max_retries: int = 3) -> bool:
+        """Check if we can retry a tool based on how many times we've retried it already."""
+        retries = self.retry_counts.get(tool_name, 0)
+        return retries < max_retries

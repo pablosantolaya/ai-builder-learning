@@ -17,11 +17,11 @@ import anthropic
 from tool_schemas import TOOL_SCHEMAS
 from tools import search_notes, calculate, summarize_text, save_result, think
 from state import TaskState                        # NEW: task logbook
-from hitl import run_tool_with_approval            # NEW: approval gate
+from hitl import run_tool_with_approval, classify            # NEW: approval gate
 
 # ── Configuration ─────────────────────────────────────────────────────────────
 
-RUN_TESTS = False   # Set True to run all 5 evaluation tasks
+RUN_TESTS = True   # Set True to run all 5 evaluation tasks
 
 MODEL = "claude-haiku-4-5-20251001"
 MAX_ITERATIONS = 10
@@ -97,23 +97,62 @@ def run_agent(user_input, client):
 
         for block in response.content:
             if block.type == "tool_use":
-                # NEW: log the step before calling anything
+                # Log the step before calling anything
                 state.add_step(f"Calling {block.name} with {block.input}")
                 state.tools_used.append(block.name)
 
-                # NEW: all calls go through the HITL gate
-                result = run_tool_with_approval(block.name, block.input, TOOL_FUNCTIONS)
+                # All calls go through the HITL gate; returns a ToolResult
+                tool_result = run_tool_with_approval(block.name, block.input, TOOL_FUNCTIONS)
 
-                # NEW: route to error or result log based on what came back
-                if result.startswith("Error:") or result == "User cancelled the operation":
-                    state.add_error(f"{block.name}: {result}")
-                else:
-                    state.add_result(block.name, str(result))
+                # Classify the result into a recovery strategy
+                recovery = classify(tool_result)
+
+                # Decide what to log and what to send back to Claude
+                if recovery == "ok":
+                    state.add_result(block.name, tool_result.data)
+                    content_for_claude = tool_result.data
+
+                elif recovery == "retry":
+                    if state.can_retry(block.name):
+                        state.record_retry(block.name)
+                        state.add_error(
+                            f"{block.name}: transient error (will retry): {tool_result.message}"
+                        )
+                        content_for_claude = (
+                            f"Transient error: {tool_result.message}. "
+                            f"You may retry this tool call."
+                        )
+                    else:
+                        state.add_error(
+                            f"{block.name}: retry limit reached: {tool_result.message}"
+                        )
+                        content_for_claude = (
+                            f"Retry limit reached for {block.name}: {tool_result.message}. "
+                            f"Do not retry this tool; try a different approach or stop."
+                        )
+
+                elif recovery == "modify_input":
+                    state.add_error(
+                        f"{block.name}: input error: {tool_result.message}"
+                    )
+                    content_for_claude = (
+                        f"Input error: {tool_result.message}. "
+                        f"Reformulate the arguments and try again, or try a different tool."
+                    )
+
+                else:  # "give_up"
+                    state.add_error(
+                        f"{block.name}: fundamental error: {tool_result.message}"
+                    )
+                    content_for_claude = (
+                        f"Fundamental error: {tool_result.message}. "
+                        f"Do not retry. Try a different approach or stop."
+                    )
 
                 tool_results.append({
                     "type": "tool_result",
                     "tool_use_id": block.id,
-                    "content": str(result)
+                    "content": content_for_claude
                 })
 
         messages.append({"role": "user", "content": tool_results})
