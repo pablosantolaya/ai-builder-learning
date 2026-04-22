@@ -1,0 +1,38 @@
+AI AGENTS SUMMARY
+
+An AI Agent is an autonomous model that can take actions by calling tools in a loop—the model decides which tools to use and in what order to complete multi-step tasks. The agent works through a core loop: the model decides if it needs tools, you execute them if requested, and feed results back until the task completes.
+
+KEY CONCEPTS:
+
+1. Agent Loop: call the model → check the result → act on tools → repeat
+   - If response is "tool_use": execute the requested tools
+   - If response is "end_turn": the task is complete
+
+2. Tool Calling Flow:
+   - Define tools with name, description, and input_schema
+   - Pass tools to the API call
+   - Model returns tool_use blocks with specific parameters
+   - Execute the tool and capture results
+   - Append tool_result blocks back to message history
+   - Call the model again with the results
+
+3. Message History: The agent maintains all messages (user, assistant, and tool results) to maintain context across the loop.
+
+4. Safety: Always set a maximum iteration limit to prevent infinite loops.
+
+BEST PRACTICES:
+
+- Keep each tool focused on a single responsibility
+- Return strings from tools (model treats all results as text)
+- Include clear descriptions so the model knows when to use each tool
+- Validate inputs inside tools and return informative error strings
+- Give the agent a clear role and list its available capabilities
+
+WHEN TO USE AGENTS:
+
+Use agents for tasks that require:
+- Multiple steps where each step depends on previous ones
+- Information retrieval
+- Complex actions the model must chain together autonomously
+
+Avoid agents for simple tasks that can be solved with a single API call.
