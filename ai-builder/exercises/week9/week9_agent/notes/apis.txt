@@ -1,0 +1,89 @@
+APIs — Learning Notes
+
+WHAT IS AN API?
+API stands for Application Programming Interface.
+It is a way for two programs to talk to each other over a network.
+Most modern APIs use the HTTP protocol (same as web browsers).
+
+REST APIs
+REST (Representational State Transfer) is the most common API style.
+A REST API exposes resources at URLs called endpoints.
+Example endpoints:
+  GET  https://api.example.com/users          — list all users
+  GET  https://api.example.com/users/42       — get user 42
+  POST https://api.example.com/users          — create a new user
+
+HTTP METHODS
+GET    — retrieve data, does not change anything on the server
+POST   — send data to create or trigger something
+PUT    — replace an entire resource
+PATCH  — update part of a resource
+DELETE — remove a resource
+
+HTTP STATUS CODES
+200 OK              — success
+201 Created         — resource was created (common after POST)
+400 Bad Request     — your request had invalid data
+401 Unauthorized    — you need to authenticate
+403 Forbidden       — you are authenticated but not allowed
+404 Not Found       — the resource does not exist
+429 Too Many Requests — you hit the rate limit, slow down
+500 Internal Server Error — something broke on the server side
+
+THE REQUESTS LIBRARY
+Python's requests library makes HTTP calls simple.
+Install: pip install requests
+
+  import requests
+
+  response = requests.get("https://api.example.com/data")
+  print(response.status_code)   # 200
+  print(response.json())         # parsed JSON as a Python dict
+
+Sending data with POST:
+  payload = {"name": "Alice", "role": "admin"}
+  response = requests.post("https://api.example.com/users", json=payload)
+
+HEADERS
+Headers carry metadata alongside your request.
+Common headers:
+  Content-Type: application/json  — tells the server you're sending JSON
+  Authorization: Bearer <token>   — passes an auth token
+
+  headers = {"Authorization": "Bearer my_token_here"}
+  response = requests.get(url, headers=headers)
+
+API KEYS
+Many APIs require an API key to identify and authenticate you.
+Never hard-code API keys in source code — use environment variables.
+  import os
+  API_KEY = os.environ["MY_API_KEY"]
+
+JSON (JavaScript Object Notation)
+APIs exchange data in JSON format — it maps directly to Python dicts and lists.
+  import json
+
+  # Parse JSON string to Python dict
+  data = json.loads('{"name": "Alice", "age": 30}')
+
+  # Convert Python dict to JSON string
+  text = json.dumps({"result": 42}, indent=2)
+
+RATE LIMITS
+APIs limit how many requests you can make per unit of time.
+If you exceed the limit you get a 429 status code.
+Best practices:
+  - Add delays between requests: time.sleep(1)
+  - Check the Retry-After header in 429 responses
+  - Cache results you already fetched
+
+AUTHENTICATION PATTERNS
+API Key — simple token in a header or query parameter
+Bearer Token / OAuth — short-lived access token obtained via login flow
+Basic Auth — base64-encoded username:password (less common now)
+
+ERROR HANDLING BEST PRACTICE
+Always check the status code before using the response body.
+  response = requests.get(url)
+  response.raise_for_status()   # raises an exception for 4xx/5xx codes
+  data = response.json()
