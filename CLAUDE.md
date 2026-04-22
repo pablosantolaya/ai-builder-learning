@@ -1,21 +1,31 @@
 # AI Builder — Learning Project
 
-## About
-Pablo's Python and AI learning exercises. Beginner level.
-Semester deadline: May 29, 2026.
+## Critical Rules
+- Always use encoding="utf-8" in open() calls (Windows cp1252 breaks special characters)
+- Use __file__ + os.path.dirname(__file__) to anchor file paths to script location
+- Never delete files — only create or modify
+- Real financial data stays local — always in .gitignore
+- Always confirm before pushing to GitHub
 
-## Rules
+## Tech Stack
+- Python 3 on Windows (PowerShell terminal)
+- VS Code with Python extension
+- Git + GitHub (repo: pablosantolaya/ai-builder-learning)
+- Anthropic SDK for Claude API calls
+- API key stored in .env (never commit .env files)
+
+## Project Structure
+- exercises/          — Python practice files (day1_strings.py, etc.)
+- projects/           — Build projects, each in its own subfolder
+- projects/*/output/  — Generated output files (gitignored)
+- notes/              — Concept summaries and progress logs
+
+## How to Run
+- Run scripts from inside their project folder: cd projects/finance_analyzer/
+- Python command: python main.py
+
+## Working With Me
 - Explain every new concept before using it
 - Add comments to all code
 - Use simple, readable patterns over clever ones
-- When I ask you to build something, show me the plan first
-- Never delete files — only create or modify
-
-## Structure
-- /ai-builder/exercises/ — Python practice files
-- /ai-builder/projects/ — Build projects
-- /ai-builder/notes/ — Concept summaries and progress logs
-
-## Git
-- Commit messages should be clear and descriptive
-- Always confirm before pushing to GitHub
+- Show me the plan before building anything
